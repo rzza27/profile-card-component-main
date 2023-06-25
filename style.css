@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+:root {
+  /* PRIMARY COLOR */
+
+  --dark-cyan: hsl(185, 75%, 39%);
+  --desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+
+  /* NEUTRAL COLOR */
+
+  --dark-gray: hsl(0, 0%, 59%);
+
+  --kumbh-sans: "Kumbh Sans", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: var(--dark-cyan);
+  height: 100vh;
+  font-family: var(--kumbh-sans);
+}
+
+.bg-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.blue-circle-top {
+  position: relative;
+}
+
+.blue-circle-top img {
+  position: absolute;
+  top: -50rem;
+  left: -30rem;
+}
+
+.blue-circle-bottom {
+  overflow: hidden;
+  height: 100vh;
+  position: relative;
+}
+
+.blue-circle-bottom img {
+  position: absolute;
+  top: 25rem;
+  left: 60rem;
+}
+
+main {
+  z-index: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+main > * {
+  background: white;
+  width: 35rem;
+  text-align: center;
+}
+
+.blue {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+.blue img {
+    
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+
+
+
+.white img{
+    border-radius: 50%;
+    transform: translateY(-5rem);
+
+}
+
+.white h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-top: -2rem;
+    color: var(--desaturated-blue);
+}
+
+.white span {
+    color: var(--dark-grayish-blue);
+}
+
+.white p{
+
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+p {
+    color: var(--dark-gray);
+}
+
+.stats {
+    border-top: 1px solid hsla(0, 0%, 59%, 0.281);
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
