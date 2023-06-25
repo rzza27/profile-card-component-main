@@ -141,3 +141,41 @@ main > * {
     letter-spacing: 1.5px;
     color: var(--dark-grayish-blue);
 }
+
+
+@media (max-width: 375px) {
+    .bg-img {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+      }
+      
+      .blue-circle-top {
+        position: relative;
+      }
+      
+      .blue-circle-top img {
+        position: absolute;
+        top: -70rem;
+        left: -70rem;
+      }
+      
+      .blue-circle-bottom {
+        overflow: hidden;
+        height: 100vh;
+        position: relative;
+      }
+      
+      .blue-circle-bottom img {
+        position: absolute;
+        top: 20em;
+        left: 10rem;
+      }
+
+      main {
+        margin: 7rem 0;
+      }
+}
